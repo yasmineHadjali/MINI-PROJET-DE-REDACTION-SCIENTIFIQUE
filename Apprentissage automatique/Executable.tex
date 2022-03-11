@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%  Ce document est un modèle conçu pour       %%%%%%%%
+%%%%%%%%  faciliter la rédaction d'un mémoire ou une %%%%%%%%
+%%%%%%%%  thése, il comporte un fichier racine et    %%%%%%%%
+%%%%%%%%  des fichiers secondaires qui formeront     %%%%%%%%
+%%%%%%%%  les différentes parties du document!       %%%%%%%%
+%%%%%%%%                       Lynda Goumeziane      %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------- Déclaration de la classe -------------------%
+%-------------- du document,il y a aussi: ------------------%
+%---------- book;article;letter;standalone -----------------%
+
+\documentclass[twoside,12pt,a4paper,french]{report}
+ \pagenumbering{arabic}
+%-----------------------------------------------------------%
+%-----------------------------------------------------------%
+%-------------- Les bibliothéques MikTex -------------------%
+%-------------- dans un fichier macro  ---------------------%
+
+\input{Macro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%      Début du document      %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%--------------------------------------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\thepage}{} % Effacer la numérotations des pages!
+%\renewcommand{\thepage}{\arabic{page}} % Choisir le type de numérotation
+%\setcounter{page}{+8}
+%utilisée.(on peut utiliser aussi roman)
+                % Le choix du début de la numérotation.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--------------Page de garde--------------------------%
+\include{Pagedegarde}
+
+%--------------Remerciement et dédicaces--------------------------%
+
+\includepdf{Remerciement-et-dedicace.pdf}
+\includepdf{ded.pdf}
+%\includepdf[page=3]{Remerciement-et-dedicace.pdf}
+
+%--------------Les différentes tables--------------------------%
+\renewcommand{\thepage}{}
+\tableofcontents     % Générer la table des matières automatiquement.
+
+\phantomsection\large\addcontentsline{toc}{chapter}{Figures}\listoffigures
+%Générer la liste des figures automatiquement.
+\renewcommand{\thepage}{}
+\phantomsection\large\addcontentsline{toc}{chapter}{Tableaux}\listoftables % %Générer la liste des tableaux automatiquement.
+\renewcommand{\thepage}{}
+%\maketitle % pour afficher le titre du memoire
+
+\renewcommand{\thepage}{\arabic{page}} % Choisir le type de numérotation utilisée.(on peut utiliser aussi roman)
+
+\setcounter{page}{+0}
+\include{Introduction}
+
+\include{Chapitre1}
+\include{Chapitre2}
+
+\include{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  Pour créer une bibiliographie apartir d'un fichier    %%%%%%%
+%%%%%%  bibtex qui organisera automatiquement cette derniere  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\bibliographystyle{plain}\markboth{Bibliographie}{}
+\nocite{*}\sloppy\pagestyle{empty}\phantomsection
+\addcontentsline{toc}{chapter}{Bibliographie} % Pour ajouter la bibliographie à la table de matière.
+\bibliography{biblio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 

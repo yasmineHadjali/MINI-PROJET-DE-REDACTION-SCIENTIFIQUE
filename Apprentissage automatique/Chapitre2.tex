@@ -1,0 +1,173 @@
+\large  \pagestyle{plain} % ou plain ou empty ou headings.
+\chapter{\bfseries Type de problème de l'Apprentissage Automatique  } %Nom du chapitre
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Apprentissage supervisé}
+
+\subsection{Définition (source:\cite{RN6})}
+\begin{figure}[h!]
+\centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=17cm]{sup.png}\\
+  \caption{Apprentissage Supervisé }\label{fig:f10}
+\end{figure}
+L'apprentissage supervisé nécessite l'intervention de l'être humain (souvent un expert) pour spécifier à l'algorithme les résultats qu'il doit produire. L'apprentissage supervisé nécessite que les sorties possibles de l'algorithme soient déjà connues et que les données utilisées pour entraîner l'algorithme sont déjà étiquetés avec les bonnes réponses. Par conséquent, les données d'entraînement doivent être étiquetés/classés à l'avance en plus des caractéristiques d'identification.
+\paragraph{}
+
+
+Certaines des approches utilisées pour l'apprentissage automatique supervisé comprennent La classification et la regression .
+
+
+
+\section{Classification }
+
+La classification est le processus de recherche d’un modèle (ou d’une fonction) qui décrit et distingue des classes de données ou des concepts. Le modèle est dérivé de l’analyse d’un ensemble de données d’apprentissage (c’est-à-dire des objets de données pour lesquels les étiquettes de classe sont connues). Le modèle est utilisé pour prédire l’étiquette de classe des objets pour lesquels l’étiquette de la classe est inconnue.
+Le modèle dérivé peut être représenté sous différents formats, telles que les règles de classification (c’est-à-dire les règles Si-Alors), réseaux de neurones, etc.
+
+ Exemple :
+un client donné nous quittera-t-il pour un concurrent ? Est-ce qu’un patient donné à une maladie ?
+Les principaux algorithmes de classification, sont :\cite{RN5}
+
+  \begin{itemize}
+                    \item \textbf{{Algorithmes d’arbre de décision :}} Un arbre de décision construit une structure de type arbre de solutions possibles à un problème basé sur certaines contraintes.
+Ils sont ainsi nommés, car ils commencent par une simple décision ou racine, qui se décompose ensuite en un certain nombre de branches jusqu’à ce qu’une décision ou une prédiction soit faite, formant un arbre. Ils sont favorisés pour leurs capacités à formaliser le problème et à fournir des solutions plus rapides et plus précises comparées à d’autres algorithmes.
+
+Les algorithmes les plus connus sont : Arbre de classification et de régression
+(CART), Itératif dichotomiseur 3 (ID3), Souche de décision,
+Arbres décisionnels conditionnels, etc.
+\paragraph{}
+                    \item \textbf{{Algorithmes bayésiens :}} est Un groupe d’algorithmes d’apprentissage automatique supervisé qui utilise le théorème de Bayes pour résoudre les problèmes de classification.
+On peut citer parmi les algorithmes : Estimateurs à une dépendance en moyenne
+(AODE), Bayesian Belief Network (BBN), etc.
+\paragraph{}
+\item  \textbf{{k- plus proche voisin :}}
+un algorithme d'apprentissage automatique supervisé qui fonctionne comme suit :
+
+\subitem L'algorithme de classification KNN cherche à classer de nouveaux exemples de données (ou d'objets), sur la base de données précédentes (saisies lors de l'apprentissage).
+\subitem  Chaque objet est représenté par des attributs, et la comparaison de ces attributs est suffisante pour déterminer la similitude entre deux objets.
+
+\subitem  Plus la différence entre deux objets est petite, plus ils sont similaires.
+
+\subitem  La similitude entre l'objet A avec les attributs {a1, a2, ..., an} et l'objet B avec les attributs {b1, b2, ..., bn} peut être calculée en utilisant la distance euclidienne :
+\paragraph{}
+$$d\left( p,q\right)= \sqrt {\sum _{i=1}^{n}  \left( q_{i}-p_{i}\right)^2 }$$
+
+     \end{itemize}
+
+\paragraph{}
+On constate donc que des algorithmes ont été développer et mis en point afin de régler les problèmes de classification.
+Plusieurs autres algorithmes peuvent aussi régler ce type de problème.
+Le tableau ci-dessous nous montre en vue plus globales ces algorithmes:
+
+
+
+\begin{table}[h!]
+\begin{Large}
+\begin{center}
+\begin{tabular}{l|c|c}
+~~ & $Algorithme$ & $En~~anglais$ \\ \hline
+1 &  Régression logistique & Logistic regression \\ \hline
+2 & K-plus proches voisins & K-nearest neighbour (KNN)\\ \hline
+3 & Machines à vecteurs de support& Support vector machines (SVM) \\ \hline
+4 &Classification naïve bayésienne & Naive Bayes classification (NB)\\ \hline
+5 & Arbres de décision& Decision trees (DT)\\ \hline
+6 &Forêts aléatoires & Random forest (RF) \\ \hline
+7 & Réseaux de neurones & Neural Networks (NN) \\
+\end{tabular}
+\end{center}
+\caption{Tableau d'algorithmes de classification }
+\end{Large}
+\end{table}
+
+
+
+\section{autres méthodes d’apprentissage:}
+\subsection{réseaux de neurones: }\cite{RN5}
+
+
+Les réseaux de neurones sont une modélisation mathématique simple, utilisant des entités élémentaires (neurones) possédant une sortie et plusieurs entrées. Le neurone somme ses entrées et applique une fonction d'activation pour générer sa sortie. Un réseau de neurone utilise de milliers, millions voir milliards de ces entités, connectées les unes aux autres par couche de neurones.
+Si le lecteur peut retrouver dans la terminologie propre à ce domaine des mots tirés de la biologie, il ne faut cependant pas penser que le but des réseaux de neurones généralement utilisés est de fournir une modélisation du fonctionnement du cerveau il s'agit plutôt d'une modélisation grossière, permettant d'approximer n'importe quelle fonction non-linéaire (ce sont des approximates universels).
+Certains réseaux de neurones sont tout de même utilisés pour leur plausibilité : c'est notamment le cas des spiking neural networks, utilisant une modélisation du fonctionnement électrique des neurones pour résoudre des tâches.
+\paragraph{}
+Il ne s'agit cependant pas là des modèles les plus utilisés. Les réseaux de neurones utilisés couramment sont assez semblable à celui présenté sur la figure \ref{fig:f1} Ils se composent d'une couche d'entrée, une ou plusieurs couches cachées et une couche de sortie.
+\paragraph{}
+Les poids reliant la sortie d'une couche aux entrées de la couche suivante sont des paramètres qui sont optimisés lors d'une phase appelée "apprentissage" (ou training). Durant cette phase, on utilise généralement un jeu d'entrées/sorties. En comparant la sortie attendue avec la sortie de notre modèle, on est capable de modifier les poids reliant les couches de manière à faire converger, tout au long de l'apprentissage, la sortie du modèle vers la sortie attendue.
+La réelle force des réseaux de neurones réside dans leur capacité à généraliser. Si l'apprentissage est stoppé assez tôt (early stop, permettant d'éviter l'overfitting, le sur-apprentissage), le modèle est capable de :
+\paragraph{}
+-Répondre presque correctement lorsque l'on lui passe une entrée du jeu de données.
+-Répondre presque correctement lorsque l'on lui passe une entrée qui ne fait pas partie du jeu de données.
+\paragraph{}
+Cela veut dire que ces réseaux peuvent, à partir d'une faible quantité de données caractérisant un phénomène, d'extraire les concepts principaux de manière à généraliser et modéliser ce phénomène.
+
+\begin{figure}[h!]
+\centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{neural-network.png}\\
+  \caption{Un réseau de neurones à trois couches successives}\label{fig:f1}
+\end{figure}
+
+\paragraph{}
+Un des hyper paramètres important des réseaux de neurones est la capacité du réseau, qui dépend du nombre de neurones présent. La capacité influe sur la faculté d'un réseau à approximer une fonction précisément.
+On peut intuitivement se dire que plus la capacité sera grande, plus le réseau pourra approximer une fonction précisément. Ceci est totalement faux : la capacité d'un réseau de neurones doit correspondre avec la complexité de la fonction, comme on peut le constater en figure \ref{fig:f2}
+
+
+\begin{figure}[h!]
+\centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{plot.png}\\
+  \caption{De gauche à droite : une capacité trop faible, correcte et trop élevée pour la tâche.}\label{fig:f2}
+\end{figure}
+
+ \paragraph{}
+                    Cette idée d'utiliser des d'unités génériques performant une simple opération dans
+                    des réseaux pour générer ou appréhender des comportements complexes date de 1943
+                    (McCulloch et Pitts). Ceci a connu un fort essor jusqu'aux années 1980 (avec la
+                    création du néocognitron de Kunihiko Fukushima, réseau de neurones proche des
+                    architectures modernes).
+
+                \paragraph{}
+                    On se rend alors vite compte du problème de sur-apprentissage, et de la
+                    difficulté de réaliser des réseaux de neurones de très grande capacité.
+                    Arrive alors une stagnation dans le domaine, malgré quelques avancées
+                    comme la création réseaux de neurones conventionnels par Yann Le Cun
+                    (aujourd'hui directeur du groupe de recherche en IA de Facebook).
+                    C'est en 2012 que, sur les travaux de Le Cun,  A. Krizhevsky, I. Sutskever, et G. E. Hinton
+                    publient "Imagenet classification with deep convolutional neural networks".
+
+                \paragraph{}
+                    Dans cette publication, les auteurs réussissent à créer et entraîner un réseau
+                    de neurones dit \textit{profond} (d'une grande capacité, d'où le \textit{deep learning})
+                    pour classifier des images d'un énorme jeu de données avec une précision
+                    jamais égalée.
+
+                \paragraph{}
+                    Depuis lors, nous connaissons un essor considérable de l'intelligence
+                    artificielle, notamment chez les géants de l'Internet. C'est grâce à cela
+                    que Facebook est capable de proposer des identifications automatiques sur
+                    des photos, ou que Google Assistant est capable de nous comprendre et
+                    d'interpréter nos questions.
+
+                \paragraph{}
+                    Ces nouvelles innovations sont fortement prometteuses pour la robotique,
+                    dans le domaine de la vision ou de la planification de trajectoire,
+                    mais aussi pour compenser les erreurs de modèles, lorsque que l'on transfert
+                    un programme fonctionnant en simulation sur un robot réel.
+\section{De l'apprentissage automatique vers l'intelligence artificiel (source:\cite{RN3})}
+Les méthodes d'apprentissage automatique ont évolué rapidement au cours des dernières années, mais une tendance plus importante a commencé il y a environ dix ans. Plus précisément, le domaine de la science des données a émergé et nous sommes passés des statisticiens aux ingénieurs informatiques et aux algorithmes \ref{fig:f10}
+\begin{figure}[h!]
+\centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{10.png}\\
+  \caption{L'évolution des statisticiens vers les ingénieurs informatique et algorithmes}\label{fig:f10}
+\end{figure}
+
+La statistique classique était le domaine des mathématiques et des distributions normales.
+\paragraph{}
+La science moderne des données est infiniment flexible sur la méthode ou les propriétés, tant qu'elle met en évidence un résultat prévisible. L'approche classique impliquait une manière unique de résoudre un problème. Mais les nouvelles approches varient radicalement, avec de multiples voies de solution.
+
+\section{Conclusion}
+
+Nous venons de voir un des problème de l'apprentissage automatique, a savoir le problème de classification, en premier lieu on a définit l'apprentissage supervisé, puis la classification et nous avons aussi s'approfondir sur les méthodes d'apprentissage disponible comme les reseaux de neurones qui figurait dans la liste des algorithmes réglant le problème de classification et en terminant, nous somme allez au delà de l'apprentissage automatique c'est-a-dire vers l'intelligence artificielle qui lui, englobe ce champ d'étude.
+
+
+

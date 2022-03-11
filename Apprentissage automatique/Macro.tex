@@ -1,0 +1,87 @@
+%-----------------------------------------------------------%
+%-----------------------------------------------------------%
+%-------------- Les bibliothéques MikTex -------------------%
+%-------------- pour la rédation d'un  ---------------------%
+%-------------- document scientifique  ---------------------%
+
+\usepackage[french]{babel}
+\usepackage[ansinew]{inputenc}    %Elle prend en charge les caractères accentués
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{graphicx}
+%\usepackage{a4wide}
+%\usepackage[chapter]{algorithm}
+%\usepackage{algorithmic}
+\usepackage[lofdepth,lotdepth]{subfig}
+%\usepackage{subfigure}
+\usepackage{theorem}
+\usepackage{amstext}
+\usepackage{newlfont}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{xspace}
+\usepackage{here}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usetikzlibrary{patterns}
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+%\usepackage{systeme}
+\usepackage{pdfpages}  %Permet d’inclure dans votre document des pages complètes d’un autre document PDF
+\usepackage{color}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+%\usepackage[12pt]{extsizes} %La taille de la police:  8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt et 20pt.
+%%------------------------------------------------------------%%
+%%------------------------------------------------------------%%
+
+\inputencoding{ansinew}   % elle suit le package[ansinew]{inputenc}.
+
+%------------------------------------------------------------%
+%---------Personnalisation des titres des chapitres----------%
+
+%\usepackage[Conny]{fncychap}      %Style1:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+\usepackage[Lenny]{fncychap}      %Style2:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+%\usepackage[Sonny]{fncychap}      %Style3:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+%\usepackage[Rejne]{fncychap}      %Style5:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+%\usepackage[Bjarne]{fncychap}      %Style6:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+%\usepackage[Bjornstrup]{fncychap}  %Style7:% Necessite d'installer le paquet fncychap de www.ctan.org/pkg/fncychap
+
+%------------------------------------------------------------%
+%--------------Mise en page du document----------------------%
+
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm} %Définir les marges des pages du documment.
+\renewcommand\headrulewidth{1pt}
+
+%%-------------------------------------------------
+\lhead{\slshape \nouppercase{\bfseries\leftmark}}
+\rhead{\slshape \nouppercase{\bfseries\rightmark}}
+\cfoot{\bfseries\thepage}
+%------------------------------------------------------------%
+%--Abréviation des caractères des ensembles mathématique-----%
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+%-------------------------------------------------------------%
+%----------Définir les environements du document--------------%
+
+
+\newcounter{theorem}                       %Pour initialiser la numérotation des environement à partir de 1.
+\theoremstyle{definition}                  %Définit le style du theoreme Même chose que \theoremstyle{remark}.
+%\theoremstyle{example}                    %Même chose que \theoremstyle{plain} marche avec le package amsthm.
+\newtheorem{theoreme}{Théorème}[section]   %La numeration des environements theoreme est déclarée par section(aussi [chapter];[part];[susection])
+\newtheorem{proposition}[theoreme]{Proposition}
+\newtheorem{corollary}[theoreme]{Corollaire}
+\newtheorem{lemma}[theoreme]{Lemme}
+\newtheorem{definition}[theoreme]{Définition}
+\newtheorem{remark}[theoreme]{Remarque}
+\newtheorem{theorem}[theoreme]{Théorème}
+\newtheorem{example}[theoreme]{Exemple}
+
+
+
