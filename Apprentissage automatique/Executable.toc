@@ -1,0 +1,57 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Figures}{}{section*.2}%
+\contentsline {chapter}{Tableaux}{}{section*.3}%
+\contentsline {chapter}{Introduction g\'en\'erale}{1}{section*.4}%
+\contentsline {paragraph}{}{1}{section*.5}%
+\contentsline {paragraph}{}{1}{section*.6}%
+\contentsline {paragraph}{}{1}{section*.7}%
+\contentsline {paragraph}{}{1}{section*.8}%
+\contentsline {paragraph}{}{2}{section*.9}%
+\contentsline {paragraph}{}{2}{section*.10}%
+\contentsline {paragraph}{}{2}{section*.11}%
+\contentsline {paragraph}{}{2}{section*.12}%
+\contentsline {paragraph}{}{2}{section*.13}%
+\contentsline {chapter}{\numberline {1}\bfseries introduction \`a l\IeC {\textquoteright }apprentissage automatique}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Historique de l'apprentissage automatique }{3}{section.1.1}%
+\contentsline {paragraph}{}{3}{section*.14}%
+\contentsline {paragraph}{}{3}{section*.15}%
+\contentsline {paragraph}{}{3}{section*.16}%
+\contentsline {paragraph}{}{3}{section*.17}%
+\contentsline {paragraph}{}{3}{section*.18}%
+\contentsline {paragraph}{}{4}{section*.19}%
+\contentsline {paragraph}{}{4}{section*.20}%
+\contentsline {section}{\numberline {1.2}D\'efinition: (source:\cite {RN2})}{4}{section.1.2}%
+\contentsline {paragraph}{}{4}{figure.caption.22}%
+\contentsline {section}{\numberline {1.3}Pourquoi utiliser l'apprentissage automatique ? }{4}{section.1.3}%
+\contentsline {paragraph}{}{4}{section*.23}%
+\contentsline {section}{\numberline {1.4}Probl\'ematique:}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Propositions et solutions :}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Conclusion :}{5}{section.1.6}%
+\contentsline {chapter}{\numberline {2}\bfseries Type de probl\`eme de l'Apprentissage Automatique }{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Apprentissage supervis\'e}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}D\'efinition (source:\cite {RN6})}{6}{subsection.2.1.1}%
+\contentsline {paragraph}{}{7}{section*.25}%
+\contentsline {section}{\numberline {2.2}Classification }{7}{section.2.2}%
+\contentsline {paragraph}{}{8}{section*.28}%
+\contentsline {paragraph}{}{8}{section*.29}%
+\contentsline {section}{\numberline {2.3}autres m\'ethodes d\IeC {\textquoteright }apprentissage:}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}r\'eseaux de neurones: }{8}{subsection.2.3.1}%
+\contentsline {paragraph}{}{9}{section*.31}%
+\contentsline {paragraph}{}{9}{section*.32}%
+\contentsline {paragraph}{}{9}{section*.33}%
+\contentsline {paragraph}{}{9}{section*.34}%
+\contentsline {paragraph}{}{9}{section*.36}%
+\contentsline {paragraph}{}{10}{section*.38}%
+\contentsline {paragraph}{}{10}{section*.39}%
+\contentsline {paragraph}{}{10}{section*.40}%
+\contentsline {paragraph}{}{11}{section*.41}%
+\contentsline {paragraph}{}{11}{section*.42}%
+\contentsline {section}{\numberline {2.4}De l'apprentissage automatique vers l'intelligence artificiel (source:\cite {RN3})}{11}{section.2.4}%
+\contentsline {paragraph}{}{11}{section*.44}%
+\contentsline {section}{\numberline {2.5}Conclusion}{12}{section.2.5}%
+\contentsline {chapter}{Conclusion g\'en\'erale}{13}{section*.45}%
+\contentsline {paragraph}{}{13}{section*.46}%
+\contentsline {paragraph}{}{13}{section*.47}%
+\contentsline {paragraph}{}{13}{section*.48}%
+\contentsline {paragraph}{}{13}{section*.49}%
+\contentsline {chapter}{Bibliographie}{14}{section*.50}%
